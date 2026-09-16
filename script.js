@@ -1,3 +1,7 @@
+/* Hawa Mail © 2026 — All Rights Reserved.
+   This file is part of the official Hawa Mail website.
+   No private API keys or credentials belong in this client-side file. */
+'use strict';
 const API='https://grabmail.io/api/v1',KEY='hawa_mail_address_v5';let address='',messages=[],current=null,timer=null,auto=true,notify=false,save=true,loading=false;
 const $=x=>document.getElementById(x), esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 function toast(x){$('toast').textContent=x;$('toast').classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>$('toast').classList.remove('on'),1800)}
@@ -19,3 +23,7 @@ $('genOtp').onclick=()=>{let x=String(Math.floor(100000+Math.random()*900000));$
 $('auto').onclick=()=>{auto=!auto;$('auto').classList.toggle('on',auto);autoStart()};$('save').onclick=()=>{save=!save;$('save').classList.toggle('on',save);if(save&&address)localStorage.setItem(KEY,address);else localStorage.removeItem(KEY)};$('notify').onclick=async()=>{notify=!notify;$('notify').classList.toggle('on',notify);if(notify&&'Notification'in window&&Notification.permission==='default')await Notification.requestPermission()};$('lang').onclick=()=>toast('العربية مفعلة — English قريبًا');
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-go]').forEach(x=>x.classList.remove('active'));b.classList.add('active');let n=b.dataset.go;if(n==='settings'){$('settings').style.display='block';$('settings').scrollIntoView({behavior:'smooth'})}else{$('settings').style.display='none';if(n==='new')$('new').scrollIntoView({behavior:'smooth'});else if(n==='inbox')$('inbox').scrollIntoView({behavior:'smooth'});else window.scrollTo({top:0,behavior:'smooth'})}});
 (async()=>{let s=localStorage.getItem(KEY);if(s){address=s;$('address').value=s;await refresh(true)}else await create();autoStart()})();
+// Basic anti-tamper / anti-accidental-copy layer. This does not make client-side code secret.
+document.addEventListener('contextmenu',e=>{if(e.target.closest('input,button'))return;e.preventDefault()});
+document.addEventListener('dragstart',e=>{if(!e.target.closest('input'))e.preventDefault()});
+window.addEventListener('error',e=>{try{status('حدث خطأ غير متوقع — أعد المحاولة','err')}catch{}});
