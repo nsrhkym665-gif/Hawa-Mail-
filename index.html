@@ -50,7 +50,7 @@ async function aiSend(){
  try{
   let r=await fetch(AI_WORKER+'/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:aiHistory.slice(-12)})});
   let d=await r.json();if(!r.ok)throw new Error(d.error||'تعذر الاتصال بـ Hawa AI');
-  let ans=d.answer||'لم يصل رد.';aiAdd(ans,'assistant');aiHistory.push({role:'assistant',content:ans});$('aiStatus').textContent='متصل بـ Hawa AI';
+  let ans=d.answer||d.reply||d?.choices?.[0]?.message?.content||'لم يصل رد.';aiAdd(ans,'assistant');aiHistory.push({role:'assistant',content:ans});$('aiStatus').textContent='متصل بـ Hawa AI';
  }catch(e){aiAdd('❌ '+e.message,'assistant');$('aiStatus').textContent='حدث خطأ في الاتصال'}
  $('aiSend').disabled=false;inp.focus();
 }
