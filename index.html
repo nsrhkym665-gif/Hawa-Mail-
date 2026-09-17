@@ -1,21 +1,12 @@
 <!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#000"><title>Hawa Mail — بريد مؤقت</title><style>
 :root{--bg:#050505;--p:#0d0d0d;--p2:#131313;--l:#292929;--t:#fff;--m:#999;--danger:#ff6262;--ok:#80e0a0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font-family:system-ui,-apple-system,Segoe UI,Tahoma,Arial,sans-serif}button,input{font:inherit}button{cursor:pointer} .top{height:70px;border-bottom:1px solid var(--l);display:flex;align-items:center;justify-content:space-between;padding:0 20px;position:sticky;top:0;background:#050505eF;backdrop-filter:blur(12px);z-index:10}.brand{display:flex;align-items:center;gap:11px}.logo{width:42px;height:42px;background:#fff;color:#000;border-radius:13px;display:grid;place-items:center;font-size:23px}.brand b{font-size:21px}.brand small{display:block;color:#777;font-size:10px}.top button,.nav button,.small{border:1px solid #292929;background:#111;color:#fff;border-radius:11px;padding:9px 12px}.layout{display:grid;grid-template-columns:220px 1fr}.side{border-left:0;border-right:1px solid var(--l);padding:16px 11px}.nav{display:grid;gap:7px;position:sticky;top:86px}.nav button{text-align:right;background:transparent;border-color:transparent;color:#aaa}.nav button.active,.nav button:hover{background:#151515;color:#fff;border-color:#292929}.side p{font-size:11px;color:#666;line-height:1.7;border:1px solid #202020;border-radius:12px;padding:12px;margin-top:22px}main{max-width:1450px;width:100%;margin:auto;padding:24px}.hero{display:grid;grid-template-columns:1fr 390px;gap:16px}.card{background:linear-gradient(145deg,#111,#090909);border:1px solid var(--l);border-radius:20px;box-shadow:0 18px 55px #0008}.hero .card{padding:30px}.eyebrow{color:#999;font-size:12px}.hero h1{font-size:clamp(32px,5vw,55px);line-height:1.05;margin:8px 0 12px}.hero p{color:#aaa;line-height:1.8}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:25px}.feature{border-top:1px solid #292929;padding-top:12px}.feature b{font-size:13px}.feature span{display:block;color:#666;font-size:11px;margin-top:3px}.mail{padding:20px}.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.row h2{font-size:17px;margin:0}.pill{font-size:10px;color:#aaa;border:1px solid #333;padding:5px 8px;border-radius:999px}.address{display:flex;gap:8px;margin-top:14px;background:#050505;border:1px solid #292929;border-radius:13px;padding:10px}.address input{min-width:0;flex:1;background:transparent;border:0;outline:0;color:#fff;direction:ltr;text-align:left;font-weight:800}.copy,.primary{background:#fff;color:#000;border:0;border-radius:10px;font-weight:900;padding:10px 13px}.actions{display:flex;gap:8px;margin-top:10px}.actions>*{flex:1}.ghost{background:#111;color:#fff;border:1px solid #333;border-radius:10px;padding:10px}.timer{text-align:center;color:#666;font-size:11px;margin-top:12px}.section{margin-top:18px}.head{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}.head h2{font-size:20px;margin:0}.inbox{overflow:hidden}.inboxhead{padding:15px 17px;border-bottom:1px solid #202020;display:flex;justify-content:space-between;gap:12px;align-items:center}.inboxhead h3{margin:0;font-size:16px}.status{font-size:10px;color:#777;margin-top:3px}.ok{color:var(--ok)}.err{color:var(--danger)}.search{width:280px;background:#080808;color:#fff;border:1px solid #292929;border-radius:10px;padding:9px;outline:0}.msg{width:100%;display:grid;grid-template-columns:40px 1fr auto;gap:12px;align-items:center;background:transparent;color:#fff;border:0;border-bottom:1px solid #181818;text-align:right;padding:14px 17px}.msg:hover{background:#101010}.avatar{width:38px;height:38px;border-radius:11px;background:#fff;color:#000;display:grid;place-items:center;font-weight:900}.msg b,.msg span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.msg .sub{color:#777;font-size:11px;margin-top:3px}.date{color:#777;font-size:10px;direction:ltr}.empty{text-align:center;color:#777;padding:50px 15px}.empty b{display:block;color:#ddd;margin-bottom:5px}.tools{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.tool{padding:17px}.tool h3{margin:0 0 7px;font-size:15px}.tool p{color:#777;font-size:11px;line-height:1.7}.out{background:#050505;border:1px solid #222;border-radius:10px;padding:10px;min-height:40px;direction:ltr;word-break:break-all;font-size:11px;color:#ddd}.footer{text-align:center;color:#666;border-top:1px solid #202020;padding:25px;margin-top:20px;font-size:11px}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;background:#fff;color:#000;border-radius:12px;padding:10px 15px;font-size:12px;font-weight:800;transition:.2s;z-index:50}.toast.on{opacity:1;transform:translate(-50%,0)}.modal{display:none;position:fixed;inset:0;background:#000c;backdrop-filter:blur(6px);z-index:30;align-items:center;justify-content:center;padding:15px}.modal.on{display:flex}.modalbox{width:min(820px,100%);max-height:88vh;overflow:auto;background:#0c0c0c;border:1px solid #292929;border-radius:18px;padding:20px}.close{background:#111;color:#fff;border:1px solid #333;border-radius:10px;width:38px;height:38px}.body{background:#050505;border:1px solid #222;border-radius:12px;padding:15px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;color:#ddd}.code{display:flex;justify-content:space-between;align-items:center;background:#fff;color:#000;border-radius:12px;padding:12px;margin:12px 0;font-size:24px;font-weight:950;direction:ltr}.settings{display:none}.setting{display:flex;justify-content:space-between;align-items:center;border:1px solid #222;border-radius:12px;padding:14px;margin-bottom:9px}.switch{width:46px;height:26px;border:0;border-radius:99px;background:#333;padding:2px}.switch i{display:block;width:22px;height:22px;background:#fff;border-radius:50%;transition:.2s}.switch.on{background:#fff}.switch.on i{background:#000;transform:translateX(-20px)}
 @media(max-width:1000px){.hero{grid-template-columns:1fr}.tools{grid-template-columns:1fr 1fr}}@media(max-width:720px){.layout{display:block}.side{border-right:0;border-bottom:1px solid #222;overflow:auto;padding:7px}.nav{display:flex;position:static}.nav button{white-space:nowrap}.side p{display:none}main{padding:12px}.hero .card{padding:21px}.features{grid-template-columns:1fr 1fr}.inboxhead{display:block}.search{width:100%;margin-top:10px}.msg{grid-template-columns:36px 1fr}.date{grid-column:2;text-align:right}.tools{grid-template-columns:1fr}.brand small{display:none}}
-
-.aiwrap{margin-top:18px}.aichat{height:330px;overflow:auto;background:#070707;border:1px solid #252525;border-radius:13px;padding:10px}.aimsg{max-width:88%;padding:10px 12px;border-radius:13px;margin:7px 0;white-space:pre-wrap;line-height:1.55}.aiuser{background:#fff;color:#000;margin-right:auto}.aiassistant{background:#171717;color:#fff;margin-left:auto}.airow{display:flex;gap:8px;margin-top:9px}.aiinput{flex:1;background:#080808;color:#fff;border:1px solid #292929;border-radius:10px;padding:11px;resize:none;height:52px}.aibtn{background:#fff;color:#000;border:0;border-radius:10px;padding:0 15px;font-weight:900}
 </style></head><body>
 <header class="top"><div class="brand"><div class="logo">✈</div><div><b>Hawa Mail</b><small>Temporary Email • Unlimited</small></div></div><div><button id="lang">العربية / English</button></div></header>
 <div class="layout"><aside class="side"><nav class="nav"><button class="active" data-go="home">⌂ الرئيسية</button><button data-go="new">＋ إنشاء بريد جديد</button><button data-go="inbox">▣ صندوق الوارد <span id="navCount"></span></button><button data-go="settings">⚙ الإعدادات</button></nav><p>البريد المؤقت مناسب للتجارب والتسجيلات. لا تستخدمه للمعلومات الحساسة.</p></aside>
 <main><section id="home"><div class="hero"><div class="card"><div class="eyebrow">بريد مؤقت • بدون حساب</div><h1>مرحبًا بك في<br>Hawa Mail</h1><p>أنشئ عنوانًا مؤقتًا، استقبل الرسائل بسرعة، واستخرج أكواد التحقق بضغطة واحدة.</p><div class="features"><div class="feature"><b>∞ إيميلات</b><span>أنشئ ما تحتاجه</span></div><div class="feature"><b>⚡ سريع</b><span>تحديث تلقائي</span></div><div class="feature"><b>⌁ OTP</b><span>استخراج تلقائي</span></div><div class="feature"><b>⌕ خصوصية</b><span>بدون حساب</span></div></div></div><div class="card mail" id="new"><div class="row"><h2>البريد الحالي</h2><span class="pill" id="api">متصل</span></div><div class="address"><input id="address" readonly value="جاري الإنشاء…"><button class="copy" id="copy">نسخ</button></div><div class="actions"><button class="primary" id="newMail">إنشاء جديد</button><button class="ghost" id="refresh">تحديث</button></div><div class="timer">الرسائل تُحذف تلقائيًا من GrabMail بعد 5 أيام.</div></div></div></section>
 <section class="section" id="inbox"><div class="head"><h2>صندوق الوارد</h2><div><button class="small" id="delAll">حذف الكل</button><button class="small" id="ref2">↻ تحديث</button></div></div><div class="card inbox"><div class="inboxhead"><div><h3><span id="count">0</span> رسالة</h3><div id="status" class="status">جاهز</div></div><input id="search" class="search" placeholder="ابحث في المرسل أو العنوان…"></div><div id="list"></div></div></section>
 <section class="section"><div class="head"><h2>أدوات سريعة</h2></div><div class="tools"><div class="card tool"><h3>🔐 مولد كلمة مرور</h3><p>كلمة قوية عشوائية للاختبارات.</p><div class="out" id="pass">اضغط توليد</div><button class="small" id="genPass">توليد ونسخ</button></div><div class="card tool"><h3>🔢 مولد OTP</h3><p>كود رقمي عشوائي من 6 أرقام.</p><div class="out" id="otp">000000</div><button class="small" id="genOtp">توليد ونسخ</button></div><div class="card tool"><h3>🧹 جلسة نظيفة</h3><p>امسح البريد المحفوظ على جهازك وابدأ من جديد.</p><div class="out">بيانات محلية فقط</div><button class="small" id="clear">مسح</button></div></div></section>
-
-<section class="section aiwrap" id="hawaAI"><div class="head"><h2>✨ Hawa AI</h2><span class="pill">DeepSeek مجاني</span></div>
-<div class="card" style="padding:14px">
-<div id="aiChat" class="aichat"><div class="aimsg aiassistant">أهلًا 👋 أنا Hawa AI. اسألني أي حاجة.</div></div>
-<div class="airow"><textarea id="aiInput" class="aiinput" placeholder="اكتب رسالتك هنا..."></textarea><button id="aiSend" class="aibtn">إرسال</button></div>
-<div id="aiStatus" class="status">متصل بـ Hawa AI</div>
-</div></section>
 <section class="section settings" id="settings"><div class="head"><h2>الإعدادات</h2></div><div class="card" style="padding:14px"><div class="setting"><div><b>التحديث التلقائي</b><br><small style="color:#777">فحص مرة كل ثانية، وهو الحد الموصى به من API.</small></div><button class="switch on" id="auto"><i></i></button></div><div class="setting"><div><b>إشعارات المتصفح</b><br><small style="color:#777">اختيارية عند وصول رسالة جديدة.</small></div><button class="switch" id="notify"><i></i></button></div><div class="setting"><div><b>حفظ البريد الحالي</b><br><small style="color:#777">محليًا على جهازك فقط.</small></div><button class="switch on" id="save"><i></i></button></div></div></section><footer class="footer">Hawa Mail — بريد مؤقت سريع وبسيط • لا ترسل معلومات حساسة إلى بريد مؤقت</footer></main></div>
 <div class="modal" id="modal"><div class="modalbox"><div class="row"><div><h2 id="subject" style="margin:0">الرسالة</h2><div id="meta" style="color:#777;font-size:11px;margin:8px 0 12px"></div></div><button class="close" id="close">×</button></div><div id="codebox"></div><div class="body" id="body">جاري التحميل…</div><div class="actions"><button class="primary" id="copyCode">نسخ الكود</button><button class="ghost" id="del">حذف الرسالة</button></div></div></div><div class="toast" id="toast"></div>
 <script>
@@ -40,20 +31,107 @@ $('genOtp').onclick=()=>{let x=String(Math.floor(100000+Math.random()*900000));$
 $('auto').onclick=()=>{auto=!auto;$('auto').classList.toggle('on',auto);autoStart()};$('save').onclick=()=>{save=!save;$('save').classList.toggle('on',save);if(save&&address)localStorage.setItem(KEY,address);else localStorage.removeItem(KEY)};$('notify').onclick=async()=>{notify=!notify;$('notify').classList.toggle('on',notify);if(notify&&'Notification'in window&&Notification.permission==='default')await Notification.requestPermission()};$('lang').onclick=()=>toast('العربية مفعلة — English قريبًا');
 document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-go]').forEach(x=>x.classList.remove('active'));b.classList.add('active');let n=b.dataset.go;if(n==='settings'){$('settings').style.display='block';$('settings').scrollIntoView({behavior:'smooth'})}else{$('settings').style.display='none';if(n==='new')$('new').scrollIntoView({behavior:'smooth'});else if(n==='inbox')$('inbox').scrollIntoView({behavior:'smooth'});else window.scrollTo({top:0,behavior:'smooth'})}});
 (async()=>{let s=localStorage.getItem(KEY);if(s){address=s;$('address').value=s;await refresh(true)}else await create();autoStart()})();
+</script>
+<section id="hawa-ai-section" style="margin-top:24px;padding:18px;border:1px solid #292929;border-radius:18px;background:#101010">
+  <h2 style="margin:0 0 12px">✨ Hawa AI</h2>
+  <div id="hawa-ai-chat" style="height:320px;overflow:auto;background:#070707;border-radius:14px;padding:12px">
+    <div class="hawa-ai-msg ai" style="padding:11px;margin:7px 0;background:#191919;border-radius:12px;white-space:pre-wrap">أهلاً 👋 أنا Hawa AI. اسألني أي حاجة.</div>
+  </div>
+  <div style="display:flex;gap:8px;margin-top:10px">
+    <input id="hawa-ai-input" placeholder="اكتب رسالتك..." style="flex:1">
+    <button id="hawa-ai-send">إرسال</button>
+  </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+    <button id="hawa-ai-save">💾 حفظ المحادثة</button>
+    <button id="hawa-ai-delete">🗑️ حذف المحادثة</button>
+  </div>
+  <div id="hawa-ai-status" style="margin-top:10px;color:#999;font-size:13px">متصل</div>
+</section>
 
-const AI_WORKER='https://hawa-ai.nsrhkym17.workers.dev/chat';
-let aiHistory=[];
-function aiAdd(text,who){let d=document.createElement('div');d.className='aimsg '+(who==='user'?'aiuser':'aiassistant');d.textContent=text;$('aiChat').appendChild(d);d.scrollIntoView({behavior:'smooth'});}
-async function aiSend(){
- let inp=$('aiInput'),text=inp.value.trim();if(!text)return;
- inp.value='';aiAdd(text,'user');aiHistory.push({role:'user',content:text});$('aiSend').disabled=true;$('aiStatus').textContent='⏳ Hawa AI يفكر…';
- try{
-  let r=await fetch(AI_WORKER+'/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:aiHistory.slice(-12)})});
-  let d=await r.json();if(!r.ok)throw new Error(d.error||'تعذر الاتصال بـ Hawa AI');
-  let ans=d.answer||d.reply||d?.choices?.[0]?.message?.content||'لم يصل رد.';aiAdd(ans,'assistant');aiHistory.push({role:'assistant',content:ans});$('aiStatus').textContent='متصل بـ Hawa AI';
- }catch(e){aiAdd('❌ '+e.message,'assistant');$('aiStatus').textContent='حدث خطأ في الاتصال'}
- $('aiSend').disabled=false;inp.focus();
-}
-$('aiSend').onclick=aiSend;
-$('aiInput').addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();aiSend()}});
-</script></body></html>
+
+<script>
+(function(){
+  const API="https://hawa-ai.nsrhkym17.workers.dev/chat";
+  const KEY="hawa_ai_conversation_v1";
+  const chat=document.getElementById("hawa-ai-chat");
+  const input=document.getElementById("hawa-ai-input");
+  const send=document.getElementById("hawa-ai-send");
+  const save=document.getElementById("hawa-ai-save");
+  const del=document.getElementById("hawa-ai-delete");
+  const status=document.getElementById("hawa-ai-status");
+  let messages=[];
+
+  function add(text,type){
+    const d=document.createElement("div");
+    d.className="hawa-ai-msg "+type;
+    d.style.cssText="padding:11px;margin:7px 0;border-radius:12px;white-space:pre-wrap;";
+    if(type==="user"){d.style.background="#fff";d.style.color="#000";}
+    else {d.style.background="#191919";}
+    d.textContent=text;
+    chat.appendChild(d);
+    chat.scrollTop=chat.scrollHeight;
+  }
+
+  function renderSaved(){
+    try{
+      const saved=JSON.parse(localStorage.getItem(KEY)||"null");
+      if(!saved || !Array.isArray(saved)) return;
+      messages=saved;
+      chat.innerHTML="";
+      messages.forEach(m=>add(m.content,m.role==="user"?"user":"ai"));
+    }catch(e){}
+  }
+
+  async function ask(){
+    const t=input.value.trim();
+    if(!t)return;
+    input.value="";
+    add(t,"user");
+    messages.push({role:"user",content:t});
+    messages=messages.slice(-20);
+    status.textContent="Hawa AI بيكتب...";
+    send.disabled=true;
+    try{
+      const r=await fetch(API,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({messages})
+      });
+      const d=await r.json();
+      if(!r.ok || !d.ok) throw new Error(d.details||d.error||"حدث خطأ");
+      const reply=d.reply||"لم يصل رد.";
+      messages.push({role:"assistant",content:reply});
+      messages=messages.slice(-20);
+      add(reply,"ai");
+      status.textContent="متصل";
+    }catch(e){
+      add("حصل خطأ في الاتصال: "+e.message,"ai");
+      status.textContent="حدث خطأ في الاتصال";
+    }finally{
+      send.disabled=false;
+      input.focus();
+    }
+  }
+
+  send.onclick=ask;
+  input.addEventListener("keydown",e=>{if(e.key==="Enter")ask();});
+
+  save.onclick=()=>{
+    localStorage.setItem(KEY,JSON.stringify(messages));
+    status.textContent="✅ تم حفظ المحادثة";
+    setTimeout(()=>status.textContent="متصل",1500);
+  };
+
+  del.onclick=()=>{
+    messages=[];
+    localStorage.removeItem(KEY);
+    chat.innerHTML='<div class="hawa-ai-msg ai" style="padding:11px;margin:7px 0;background:#191919;border-radius:12px;white-space:pre-wrap">أهلاً 👋 أنا Hawa AI. اسألني أي حاجة.</div>';
+    status.textContent="تم حذف المحادثة";
+    setTimeout(()=>status.textContent="متصل",1500);
+  };
+
+  renderSaved();
+})();
+</script>
+
+</body></html>
