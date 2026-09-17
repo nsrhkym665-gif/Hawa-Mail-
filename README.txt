@@ -1,7 +1,15 @@
-Hawa Mail FULL + AI FIXED
+Hawa Mail — Cloudflare AI Project
 
-1) ارفع index.html إلى GitHub Pages مكان index.html الحالي.
-2) في Cloudflare Worker hawa-ai: استبدل worker.js بالكود الموجود هنا ثم Deploy.
-3) Secret باسم BLAZE_KEY يجب أن يبقى كما هو ولا يوضع داخل الموقع.
-4) Worker يستخدم DeepSeek R1 بدل DeepSeek V4 Pro لتجنب خطأ PAYG الخاص بالموديل المدفوع.
-5) الموقع الكامل موجود داخل index.html، وHawa AI مدمج بداخله.
+الملفات:
+1. index.html — موقع Hawa Mail.
+2. worker.js — Hawa AI باستخدام Cloudflare Workers AI.
+3. README.txt — التعليمات.
+
+Cloudflare Worker:
+https://hawa-ai.nsrhkym17.workers.dev
+
+مهم:
+- داخل Cloudflare أضف Workers AI Binding باسم AI.
+- استخدم محتوى worker.js في الـWorker.
+- لا يوجد BlazeAPI أو API Key في المشروع.
+- Hawa AI يعرّف مطوره بأنه: المطور حكيم.
